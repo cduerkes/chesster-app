@@ -16,11 +16,11 @@
 }
 
 .hero {
-  background: image_url('hero.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
+  background: image_url('hero11b.jpg') no-repeat center center fixed; 
+/*  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
   height: 370px;
   box-shadow: 0px 3px 8px #2a2a2a;
 }
@@ -30,13 +30,14 @@ h1, h2, h3, h4, h5, h6, .navbar {
 }
 
 .frosty {
-  background: rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.95);
   color: white;
 }
 
 .frosty h1 {
   font-family: 'CallunaSansRegular', serif;
   font-weight: 100;
+  color: rgba(0, 0, 0, 0.95);
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
 }
 
@@ -46,6 +47,20 @@ h1, h2, h3, h4, h5, h6, .navbar {
   text-shadow: rgba(0, 0, 0, 0.95) 1px 1px;
 }
 
-.btn {
+.btn-success {
+  color: #fff;
+  background-color: #f9415d;
+  border-color: #f9415d;
   border-radius: 0;
+}
+
+.feature {
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+body {
+/*  background: image_url('bg.png');*/
+/*  font-family: Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
