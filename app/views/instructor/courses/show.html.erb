@@ -39,9 +39,18 @@
 <div class="booyah-box col-10 offset-1">
   <h1 class="text-center"><%= current_course.title %></h1>
   <%= image_tag current_course.image, class: 'img-fluid' %>
+  <br /><br />
+
+  <div class="row">
+    <div class="col-12 col-sm-8">
+      <%= current_course.description %>
+    </div>
+    <div class="col-12 col-sm-4 text-center">
+      <%= link_to 'Preview as a student', course_path(current_course), class: 'btn btn-warning' %>
+    </div>
+  </div>
   <br />
-  <%= link_to 'Preview as a student', course_path(current_course), class: 'btn btn-warning float-right' %>
-  <br class="clr" />
+  <br />
 
   <div class="text-center">
     <!-- Button trigger modal -->
@@ -59,7 +68,7 @@
         </div>
         <!-- Button trigger modal -->
         <button type="button" class="btn btn-primary float-right new-lesson-button" data-toggle="modal" data-target="#newLessonModal" data-lesson-url="<%= instructor_section_lessons_path(section) %>">
-          New Lesson
+          New lesson
         </button>
         <br class="clr" />
         <br class="clr" />
